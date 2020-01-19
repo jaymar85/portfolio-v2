@@ -1,0 +1,121 @@
+footer {
+    padding: 20px;
+    /* text-align: center; */
+    height: 30vh;
+    background-color: rgba(38, 38, 38);
+    /* z-index: 2; */
+}
+
+.row {
+    width: 96%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.social-media {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+} 
+
+.btn2 {
+    display: inline-block;
+    list-style: none;
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+    background-color: #333;
+    border-radius: 30%;
+    overflow: hidden;
+    position: relative;
+}
+
+.btn2 .icon {
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    line-height: 45px;
+    transition: 0.2s linear;
+}
+
+.btn2:hover .icon {
+    transform: scale(1.3);
+    color: #333;
+}
+
+.btn2::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: rgba(170, 170, 170);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+
+.btn2:hover::before {
+    animation: roxy 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+
+@keyframes roxy {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }   
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/* Rocket Man */
+.page-scroll {
+    text-align: center;
+    height: 70px;
+}
+
+.page-scroll a img {
+    height: 40px;
+}
+
+.page-scroll a img:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {transform: translate(1px, 1px) rotate(0deg);}
+    10% {transform: translate(-1px, -2px) rotate(-1deg);}
+    20% {transform: translate(-3px, 0px) rotate(1deg);}
+    30% {transform: translate(3px, 2px) rotate(0deg);}
+    40% {transform: translate(1px, -1px) rotate(1deg);}
+    50% {transform: translate(-1px, 2px) rotate(-1deg);}
+    60% {transform: translate(-3px, 1px) rotate(0deg);}
+    70% {transform: translate(3px, 1px) rotate(-1deg);}
+    80% {transform: translate(-1px, -1px) rotate(1deg);}
+    90% {transform: translate(1px, 2px) rotate(0deg);}
+    100% {transform: translate(1px, -2px) rotate(-1deg);}
+}
+
+
+#to-top-copy {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    /* opacity: 0; */
+}
+
+/* copyright */
+footer p {
+    color: rgb(170, 170, 170);
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23.8px;
+}
