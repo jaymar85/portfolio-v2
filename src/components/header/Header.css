@@ -1,0 +1,75 @@
+#showcase {
+    background-image: url('../../img/dolomite-mtn-backdrop.jpeg');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+#typewriter {
+    color: #FF9900;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    /* font-size: 4em;
+    color: white;
+    text-transform: uppercase;
+    border: .05em solid;
+    background-color: transparent;
+    padding: 15px 28px 15px 28px; */
+}
+  
+span {
+    border-right: #fff .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+  
+@keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+}
+
+#showcase h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    text-align: center;
+}
+
+#icons ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    list-style-type: none;
+}
+
+#icons ul li {
+    margin: 0 13px;
+}
+
+#icons ul li i{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 34px;
+    transition: 0.25s;
+}
+
+#icons ul li i:hover {
+    transform: scale(1.15);
+    color: #FF9900;
+    transition: 0.25s;
+}
