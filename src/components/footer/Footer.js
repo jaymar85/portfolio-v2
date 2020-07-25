@@ -42,7 +42,7 @@ class Footer extends Component {
                         src={rocket} 
                         alt='rocket ship'
                         onMouseOver={this.showText}
-                        onMouseOut = {this.hideText}
+                        onMouseOut={this.hideText}
                         />
                         </a>
                         <div>
