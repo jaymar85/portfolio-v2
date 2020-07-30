@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
-import Nav from '../nav/Nav'
 import './Header.css'
 
 class Header extends Component {
     render() {
         return (
             <div id="showcase">
-                <Nav/>
                     <div className="headline">
                         <p id="typewriter"><span></span></p>
                     </div>
