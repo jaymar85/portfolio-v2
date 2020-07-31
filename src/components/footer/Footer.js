@@ -21,18 +21,17 @@ class Footer extends Component {
     }
 
     render() {
-
         return (
             <footer>
                 <div className='row'>
                     <div className='social-media'>
-                        <a className='btn2' href="https://twitter.com/Jeremy66630195" target='_blank'>
+                        <a className='btn' href="https://twitter.com/Jeremy66630195" target='_blank'>
                             <FontAwesomeIcon className='icon' icon={faTwitter} />
                         </a>
-                        <a className='btn2' href='https://github.com/jaymar85' target='_blank'>
+                        <a className='btn' href='https://github.com/jaymar85' target='_blank'>
                             <FontAwesomeIcon className='icon' icon={faGithub} />
                         </a>
-                        <a className='btn2' href='https://www.linkedin.com/in/jeremymark/' target='_blank'>
+                        <a className='btn' href='https://www.linkedin.com/in/jeremymark/' target='_blank'>
                             <FontAwesomeIcon className='icon' icon={faLinkedinIn} />
                         </a>
                     </div>
