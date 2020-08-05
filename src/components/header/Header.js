@@ -2,12 +2,40 @@ import React, {Component} from 'react';
 import './Header.css'
 
 class Header extends Component {
+    constructor() {
+        super();
+        this.state = {
+            scrolled: false,
+            className: 'sticky'
+        }
+    }
+
+    componentWillMount() {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY < 0;
+            if(!scrollTop) {
+                this.setState({ scrolled: true });
+            } else {
+                this.setState({ scrolled: false });
+            }
+        })
+    }
+
     render() {
         return (
             <div id="showcase">
-                    <div className="headline">
-                        <p id="typewriter"><span></span></p>
-                    </div>
+                <header>
+                    <a href="#" class="logo">Jeremy</a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </header>
+                <div className="headline">
+                    <p id="typewriter"><span></span></p>
+                </div>
                 <h1>Jeremy Mark</h1>
                 <div id="icons">
                     <ul>
