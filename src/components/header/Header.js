@@ -24,15 +24,6 @@ class Header extends Component {
     render() {
         return (
             <div id="showcase">
-                <header>
-                    <a href="#" class="logo">Jeremy</a>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </header>
                 <div className="headline">
                     <p id="typewriter"><span></span></p>
                 </div>
