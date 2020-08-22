@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './navbar.css';
 
 class Navbar extends Component {
@@ -25,16 +27,18 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <header>
-                    <a href="#" className="logo">Logo</a>
+                <header onScroll={this.handleScroll} className={this.state.addClass}>
+                    <a href="#" className="logo">Jeremy</a>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#" className="active">Home</a></li>
                             <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
+                    <div className="menu-toggle"><FontAwesomeIcon className='icon' icon={faBars} /></div>
                 </header>
             </div>
         );
