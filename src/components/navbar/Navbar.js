@@ -7,9 +7,11 @@ class Navbar extends Component {
     constructor() {
         super();
         this.state = {
-            addClass: ''
+            addClass: '',
+            showMenu: ''
         }
         this.handleScroll = this.handleScroll.bind(this);
+        this.toggleMenu = this.toggleMenu.bind(this);
     }
 
     componentDidMount() {
@@ -24,12 +26,17 @@ class Navbar extends Component {
         }
     }
 
+    toggleMenu() {
+        let { showMenu } = this.state;
+        this.setState({showMenu: showMenu === 'open' ? '' : 'open'})
+    }
+
     render() {
         return (
             <div>
                 <header onScroll={this.handleScroll} className={this.state.addClass}>
                     <a href="#" className="logo">Jeremy</a>
-                    <nav>
+                    <nav className={this.state.showMenu}>
                         <ul>
                             <li><a href="#" className="active">Home</a></li>
                             <li><a href="#about">About</a></li>
@@ -38,7 +45,7 @@ class Navbar extends Component {
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
-                    <div className="menu-toggle"><FontAwesomeIcon className='icon' icon={faBars} /></div>
+                    <div className="menu-toggle" onClick={this.toggleMenu}><FontAwesomeIcon className='icon' icon={faBars} /></div>
                 </header>
             </div>
         );
