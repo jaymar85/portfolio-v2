@@ -1,31 +1,31 @@
 import React, {Component} from 'react';
-import './Header.css'
+import './hero.css'
 
-class Header extends Component {
+class Hero extends Component {
     constructor() {
         super();
         this.state = {
-            scrolled: false,
-            className: 'sticky'
+            // scrolled: false,
+            // className: 'sticky'
         }
     }
 
-    componentWillMount() {
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.scrollY < 0;
-            if(!scrollTop) {
-                this.setState({ scrolled: true });
-            } else {
-                this.setState({ scrolled: false });
-            }
-        })
-    }
+    // componentWillMount() {
+    //     window.addEventListener('scroll', () => {
+    //         const scrollTop = window.scrollY < 0;
+    //         if(!scrollTop) {
+    //             this.setState({ scrolled: true });
+    //         } else {
+    //             this.setState({ scrolled: false });
+    //         }
+    //     })
+    // }
 
     render() {
         return (
             <div id="showcase">
                 <div className="headline">
-                    <p id="typewriter"><span></span></p>
+                    <p><span></span></p>
                 </div>
                 <h1>Jeremy Mark</h1>
                 <div id="icons">
@@ -35,8 +35,8 @@ class Header extends Component {
                     </ul> 
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default Header;
+export default Hero;

@@ -20,9 +20,9 @@ class Navbar extends Component {
 
     handleScroll() {
         if (window.scrollY > 0) {
-            this.setState({addClass: "sticky"})
+            this.setState({addClass: 'sticky'})
         } else {
-            this.setState({addClass: ""})
+            this.setState({addClass: ''})
         }
     }
 

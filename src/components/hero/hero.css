@@ -9,7 +9,7 @@
     justify-content: center;
 }
 
-#typewriter {
+/* #typewriter {
     color: #FF9900;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
@@ -18,24 +18,24 @@
     font-style: normal;
     letter-spacing: 0.1em;
     line-height: 1em;
-    /* font-size: 4em;
+    font-size: 4em;
     color: white;
     text-transform: uppercase;
     border: .05em solid;
     background-color: transparent;
-    padding: 15px 28px 15px 28px; */
-}
+    padding: 15px 28px 15px 28px; 
+} */
   
-span {
+/* span {
     border-right: #fff .05em solid;
     animation: caret 1s steps(1) infinite;
-}
+} */
   
-@keyframes caret {
+/* @keyframes caret {
     50% {
       border-color: transparent;
     }
-}
+} */
 
 #showcase h1 {
     color: #fff;
