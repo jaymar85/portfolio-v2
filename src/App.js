@@ -22,8 +22,6 @@ class App extends Component {
   navHighlighter() {}
 
   render() {
-    let scrollY = window.pageYOffset;
-    
     return (
       <div className="App">
         <Navbar />

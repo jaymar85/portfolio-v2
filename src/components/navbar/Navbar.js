@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import {NavLink} from 'react-router-dom';
 import './navbar.css';
 
 class Navbar extends Component {
@@ -35,7 +36,7 @@ class Navbar extends Component {
         return (
             <div>
                 <header onScroll={this.handleScroll} className={this.state.addClass}>
-                    <a href="#" className="logo">Jeremy</a>
+                    <a href="#" className="logo">Jeremy Mark</a>
                     <nav className={this.state.showMenu}>
                         <ul>
                             <li><a href="#" className="active">Home</a></li>
